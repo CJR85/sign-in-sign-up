@@ -4,8 +4,15 @@ let signupBtn = document.getElementById('signupBtn'),
   title = document.getElementById('title');
 
 signinBtn.onclick = function () {
-  nameField.style.maxHeight = 0;
+  nameField.style.maxHeight = '0';
   title.innerHTML = 'Sign In';
   signupBtn.classList.add('disable');
   signinBtn.classList.remove('disable');
+};
+
+signupBtn.onclick = function () {
+  nameField.style.maxHeight = '60px';
+  title.innerHTML = 'Sign In';
+  signupBtn.classList.remove('disable');
+  signinBtn.classList.add('disable');
 };
