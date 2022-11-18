@@ -5,4 +5,7 @@ let signupBtn = document.getElementById('signupBtn'),
 
 signinBtn.onclick = function () {
   nameField.style.maxHeight = 0;
+  title.innerHTML = 'Sign In';
+  signupBtn.classList.add('disable');
+  signinBtn.classList.remove('disable');
 };
